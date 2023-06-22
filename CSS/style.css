@@ -65,6 +65,20 @@ img {
   justify-content: space-between;
   gap: 46px;
 }
+.underline {
+  position: relative;
+  color: #2196f3;
+}
+.underline::after {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 0;
+  width: 53px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #2196f3;
+}
 .logo-nav {
   display: flex;
   font-family: "Raleway";
@@ -520,4 +534,51 @@ h4 {
 }
 .project-descr-wrap {
   width: 100%;
+}
+.backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: not-allowed;
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+element.style {
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close-button-position {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  right: 14px;
+  fill: #000000;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.close-button {
+  margin: 6px;
 }

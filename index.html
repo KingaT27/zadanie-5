@@ -34,7 +34,9 @@
           </div>
           <nav class="navbar-menu">
             <ul class="menu">
-              <li><a href="#" class="menu-links">Agencja</a></li>
+              <li>
+                <a href="#" class="menu-links underline">Agencja
+                </a></li>
               <li>
                 <a href="./portfolio.html" class="menu-links">Portfolio</a>
               </li>
@@ -78,9 +80,8 @@
               EFEKTYWNE ROZWIAZANIA <br />
               DLA WASZEGO BIZNESU
             </h1>
-            <button class="button-description" type="button">
-              Zamow usluge
-            </button>
+            <button class="button-description" type="button" data-modal-open>
+              Zamow usluge</button>
           </div>
         </div>
       </section>
@@ -355,7 +356,6 @@
         <div class="webstudio-footer">
           <span class="logo1">Web</span>
             <a href="./index.html" class="logo2">Studio</a>
-          
           <address>
             <ul class="footer-final">
               <li class="address"> Warszawa, Aleje Jerozolimskie 21</li>
@@ -405,5 +405,20 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<div class="close-button-position">
+					<svg
+						class="close-button"
+						width="18px"
+						height="18px"
+						data-modal-close>
+						<use href="./images/icons.svg#icon-close" />
+					</svg>
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
